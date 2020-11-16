@@ -1,0 +1,60 @@
+body {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    height: 200px;
+    background-color: azure;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-family: "Arial Rounded MT", sans-serif; 
+}
+
+.span-header {
+    font-family: "Arial Rounded MT", sans-serif;
+    font-size: 18px;
+}
+
+.btn-cart,
+.buy-btn {
+    width: 150px;
+    height: 45px;
+    font-family: "Arial Rounded MT", sans-serif;
+    color: white;
+    border: 3px solid yellow;
+    background-color: chocolate;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.products {
+    display: flex;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+h3 {
+    font-family: "Arial Rounded MT", sans-serif;
+    font-size: 18px;
+}
+
+p {
+    font-family: "Arial Rounded MT", sans-serif;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
