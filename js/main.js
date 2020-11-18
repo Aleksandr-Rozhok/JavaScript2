@@ -4,6 +4,7 @@ class ProductsList {
         this.goods = [];
         this.allProducts = [];
         this._fetchProducts();
+        this.sumCount();
     }
     _fetchProducts() {
         this.goods = [{
@@ -24,6 +25,14 @@ class ProductsList {
             price: 50
         } ]
     }
+    sumCount(){
+        let i = 0;
+        for(this.price of this.goods) {
+            i += this.price
+        }
+        return console.log(i); 
+    }
+    
     render() {
         const block = document.querySelector(this.container)
         for (let product of this.goods) {
@@ -48,6 +57,24 @@ class ProductsItem {
                 <p>${this.price}</p>
                 <button class="buy-btn">Купить</button>
             </div>`
+    }
+}
+
+class Cart {
+    constructor(basket = ".btn-cart"){
+        this.basket = basket;
+        this.goodsBasket = [];
+        this._removeGoods();
+        this.buyGoods();
+    }
+}
+
+class CartList {
+    constructor(ProductsItem){
+    this.removeItem();
+    this.checkItem();
+    this.plusGoods();
+    this.minusGoods();
     }
 }
 
